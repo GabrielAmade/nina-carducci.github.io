@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 
     	<!-- Style css -->
-		<link rel="stylesheet" href="./assets/style.css">
+		<link rel="stylesheet" href="./assets/style_min.css">
 
     	<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,14 +23,20 @@
 		<meta name="description" content="Retouches photos ? Shooting ? Album photos pour un mariage, un baptême, un anniversaire ? Faites appel à Nina Carducci, photographe basée à Bordeaux !">
 
        	<!-- Bootstrap jS -->
-		<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+		<script
+      	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      	integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      	crossorigin="anonymous"
+      	defer
+    	></script>
+
 
     	<!-- Jquery -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 
     	<!-- Fichiers JS -->
-		<script src="./assets/maugallery.js"></script>
-		<script src="./assets/scripts.js"></script>
+		<script src="./assets/maugallery_min.js" defer></script>
+		<script src="./assets/scripts.js" defer></script>
 		
 		
 		<!--Référencement réseaux sociaux-->
@@ -101,14 +107,30 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img alt='men walking with suitcase pedestrian crossing' src="./assets/images/slider/men_walking.jpg" class="d-block w-100">
+              <img 
+			  	alt='men walking with suitcase pedestrian crossing' 
+				src="./assets/images/slider/men_walking.webp" 
+				class="d-block w-100"
+				srcset="./assets/images/slider/men_walking_mobile.webp 300w, ./assets/images/slider/men_walking.webp 800w"
+				>
             </div>
+
             <div class="carousel-item">
-              <img alt='people dancing in the middle of a crowd' src="./assets/images/slider/people_dancing_crowd.jpg" class="d-block w-100">
+              <img 
+			  	alt='people dancing in the middle of a crowd' 
+				src="./assets/images/slider/people_dancing_crowd.webp" 
+				class="d-block w-100"
+				srcset="./assets/images/slider/people_dancing_crowd_mobile.webp 300w, ./assets/images/slider/people_dancing_crowd.webp 800w"
+				>
             </div>
+
             <div class="carousel-item">
-              <img alt='married_couple_kissing
-			  ' src="./assets/images/slider/married_couple_kissing.jpg" class="d-block w-100">
+              <img 
+			  	alt='married_couple_kissing' 
+				src="./assets/images/slider/married_couple_kissing.webp" 
+			    class="d-block w-100"
+				srcset="./assets/images/slider/married_couple_kissing_mobile.webp 300w, ./assets/images/slider/married_couple_kissing.webp 800w"		
+				>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -137,17 +159,90 @@
 		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<article class="container py-3">
+
+
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item" alt='concert crowd' src="./assets/images/gallery/concerts/concert_crowd.webp">
-					<img data-gallery-tag="Entreprises" class="gallery-item" alt='businessman crossing arms' src="./assets/images/gallery/entreprise/businessman.webp">
-					<img data-gallery-tag="Entreprises" class="gallery-item" alt='two womens smiling' src="./assets/images/gallery/entreprise/smiling_womens.webp">
-					<img data-gallery-tag="Mariages" class="gallery-item" alt='couple of hands touching' src="./assets/images/gallery/mariage/hands.webp">
-					<img data-gallery-tag="Portrait" class="gallery-item" alt='men portrait closing eyes' src="./assets/images/gallery/portraits/portrait_men.webp">
-					<img data-gallery-tag="Mariages" class="gallery-item" alt='newly wed couple' src="./assets/images/gallery/mariage/married_couple.webp">
-					<img data-gallery-tag="Portrait" class="gallery-item" alt='men portrait with round glasses' src="./assets/images/gallery/portraits/portrait_women.webp">
-					<img data-gallery-tag="Concert" class="gallery-item" alt='singer on stage' src="./assets/images/gallery/concerts/concert_singer.webp">
-					<img data-gallery-tag="Entreprises" class="gallery-item" alt='women smiling' src="./assets/images/gallery/entreprise/smiling_women.webp">
+
+
+					<img 
+						data-gallery-tag="Concert" 
+						class="gallery-item" 
+						alt='concert crowd' 
+						src="./assets/images/gallery/concerts/concert_crowd.webp"
+						srcset="./assets/images/gallery/concerts/concert_crowd_mobile.webp 300w, ./assets/images/gallery/concerts/concert_crowd.webp 800w"
+						>
+
+
+					<img 
+						data-gallery-tag="Entreprises" 
+						class="gallery-item" 
+						alt='businessman crossing arms' 
+						src="./assets/images/gallery/entreprise/businessman.webp"
+						srcset="./assets/images/gallery/entreprise/businessman_mobile.webp 300w, ./assets/images/gallery/entreprise/businessman.webp 800w"
+						>
+
+
+					<img 
+						data-gallery-tag="Entreprises" 
+						class="gallery-item" 
+						alt='two womens smiling' 
+						src="./assets/images/gallery/entreprise/smiling_womens.webp"
+						srcset="./assets/images/gallery/entreprise/smiling_womens_mobile.webp 300w, ./assets/images/gallery/entreprise/smiling_womens.webp 800w"
+						>
+
+					<img 
+						data-gallery-tag="Mariages" 
+						class="gallery-item" 
+						alt='couple of hands touching' 
+						src="./assets/images/gallery/mariage/hands.webp"
+						srcset="./assets/images/gallery/mariage/hands_mobile.webp 300w, ./assets/images/gallery/mariage/hands.webp 800w"
+						>
+
+					<img 
+						data-gallery-tag="Portrait" 
+						class="gallery-item" 
+						alt='men portrait closing eyes' 
+						src="./assets/images/gallery/portraits/portrait_men.webp"
+						srcset="./assets/images/gallery/portraits/portrait_men_mobile.webp 300w, ./assets/images/gallery/portraits/portrait_men.webp 800w"
+						
+						>
+
+					<img 
+						data-gallery-tag="Mariages" 
+						class="gallery-item" 
+						alt='newly wed couple' 
+						src="./assets/images/gallery/mariage/married_couple.webp"
+						srcset="./assets/images/gallery/mariage/married_couple_mobile.webp 300w, ./assets/images/gallery/mariage/married_couple.webp 800w"
+						>
+
+					<img 
+					data-gallery-tag="Portrait" 
+					class="gallery-item" 
+					alt='men portrait with round glasses' 
+					src="./assets/images/gallery/portraits/portrait_women.webp"
+					srcset="./assets/images/gallery/portraits/portrait_women_mobile.webp 300w, ./assets/images/gallery/portraits/portrait_women.webp 800w"				
+					>
+
+					<img 
+						data-gallery-tag="Concert" 
+						class="gallery-item" 
+						alt='singer on stage' 
+						src="./assets/images/gallery/concerts/concert_singer.webp"
+						srcset="./assets/images/gallery/concerts/concert_singer_mobile.webp 300w, ./assets/images/gallery/concerts/concert_singer.webp 800w"				
+					
+					>
+
+					<img 
+						data-gallery-tag="Entreprises" 
+						class="gallery-item" 
+						alt='women smiling' 
+						src="./assets/images/gallery/entreprise/smiling_women.webp"
+						srcset="./assets/images/gallery/entreprise/smiling_women_mobile.webp 300w, ./assets/images/gallery/entreprise/smiling_women.webp 800w"					
+						>
 				</div>
+
+
+
 			</article>
 			<article class="quote">
 				<figure>
